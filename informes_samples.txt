@@ -1,0 +1,64 @@
+### 1)
+**Background**
+ Alex is from Finwise Labs, a New York-based fintech startup building a B2B payments API for international transactions. They have recently raised a seed round and are now working with enterprise clients. The company has a Delaware C-Corp, a holding entity in the Cayman Islands, and a Brazilian subsidiary. They have 12 full-time employees.
+
+**Needs**
+ Finwise Labs needs ongoing legal support, including reviewing and redrafting MSAs, NDAs, and employment agreements. They are also considering restructuring the board and issuing equity to advisors. They specifically need help reviewing two contracts next week, one with a U.S. client and one in Brazil.
+
+**Challenges**
+ They previously worked with a solo attorney but now require a law firm with more experience handling venture-backed companies and larger contracts. They lack an internal legal team and need reliable outside counsel.
+
+**Overall Decision**
+ Qualified
+
+**Justification**
+ The client is a venture-backed fintech startup with a clear need for ongoing legal support in areas where the firm has expertise. They have an immediate need for contract review, and their growth stage suggests a potential for ongoing legal work.
+
+### 2)
+**Background**
+ Lauren runs a wellness coaching business in Colorado, offering 1:1 coaching and group workshops, both online and in-person. She has been running the business as a sole proprietor for three years.
+
+**Needs**
+ Lauren is looking to trademark her business name and get help writing terms and conditions for her website and waivers for her coaching clients. She is also considering forming an LLC.
+
+**Challenges**
+ Lauren's business is a small solo operation, while the firm primarily works with larger, venture-backed startups. The firm also does not focus on the consumer-facing legal needs of businesses like Lauren's.
+
+**Overall Decision**
+ Not Qualified
+
+**Justification**
+ The firm primarily works with venture-backed startups and small to mid-sized companies, and does not typically handle trademarks or consumer-facing terms for solo service providers like this client.
+
+### 3)
+
+**Background**
+ Emilio is from NovaGuard Technologies, a San Francisco-based cybersecurity startup that recently closed its Series A round. They are developing a cloud-native security platform integrating with AWS and Azure and are incorporated as a Delaware C-Corp with a UK subsidiary.
+
+**Needs**
+ NovaGuard needs ongoing general counsel, drafting and reviewing master services agreements, privacy policies, and assistance with SOC 2 compliance. They also require robust legal support for partnership agreements, data privacy compliance, and IP protection.
+
+**Challenges**
+ The client's contracts have become more complex, requiring a shift from a solo consultant to a full-service law firm. They have upcoming deadlines, including finalizing a vendor partnership agreement next week and starting a SOC 2 audit in two months. They currently have no in-house counsel.
+
+**Overall Decision**
+ Qualified
+
+**Justification**
+ NovaGuard Technologies is a venture-backed startup with clear legal needs in corporate law, contracts, and compliance, matching the firm's expertise. They require ongoing general counsel services and have upcoming deadlines, indicating a strong fit for a retainer engagement.
+
+### 4)
+**Background**
+ Valeria runs SweetSpot Bakery, a small artisanal bakery in Boulder, Colorado, operating as a sole proprietorship.
+
+**Needs**
+ Valeria needs an employee handbook drafted, her lease agreement updated, and liability waivers created for baking classes she teaches.
+
+**Challenges**
+ Valeria's primary challenge is finding legal assistance suitable for a small business, as the firm she contacted specializes in larger, venture-backed tech companies.
+
+**Overall Decision**
+ Not Qualified
+
+**Justification**
+ The client's needs (employee handbook, lease agreement update, liability waivers) are outside the firm's specialization in venture-backed tech and growth-stage companies.
