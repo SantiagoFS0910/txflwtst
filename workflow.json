@@ -1,0 +1,1368 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "events": [
+          "invitee.created"
+        ]
+      },
+      "type": "n8n-nodes-base.calendlyTrigger",
+      "typeVersion": 1,
+      "position": [
+        -200,
+        -260
+      ],
+      "id": "8e4598f1-cc1c-40d1-8414-3dcc28705050",
+      "name": "Calendly Trigger",
+      "webhookId": "a7079c90-382a-4566-a206-b5f1ad4249cd",
+      "credentials": {
+        "calendlyApi": {
+          "id": "FyIp97R6iUohxsuR",
+          "name": "Calendly account"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -480,
+        240
+      ],
+      "id": "85db54c1-0705-40b3-a7e1-94862dbe1967",
+      "name": "HTTP Request",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "channelId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "updateFields": {},
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        1600,
+        -40
+      ],
+      "id": "ef487e45-b23c-4b6f-9601-ba2fc52de8d3",
+      "name": "Slack",
+      "webhookId": "37a7e795-20c6-4dac-9e17-1e7b9789f949",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        40
+      ],
+      "id": "4d3d98c0-a599-4477-bda3-8b4f08f2afd7",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        360,
+        20
+      ],
+      "id": "9e784317-79ca-4b69-864a-713dc6104325",
+      "name": "Google Gemini Chat Model1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        580
+      ],
+      "id": "7ee5abaf-c53a-4d16-b208-24c19ebccad2",
+      "name": "Google Gemini Chat Model4",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        60,
+        600
+      ],
+      "id": "b8765cf6-d513-4604-963b-1f2f1e39d75e",
+      "name": "Google Gemini Chat Model5",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1820,
+        460
+      ],
+      "id": "6808d986-118a-448d-9106-1196f69363eb",
+      "name": "Google Gemini Chat Model2",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1800,
+        -60
+      ],
+      "id": "12acaceb-9f54-4a24-b1b1-836305838f10",
+      "name": "Google Gemini Chat Model3",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        2140,
+        -60
+      ],
+      "id": "d6e3fae9-6421-4831-aec8-e73e51b82a1d",
+      "name": "Google Gemini Chat Model6",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "Hp381gszUydGeNS0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "output": "raw",
+        "filters": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlookTrigger",
+      "typeVersion": 1,
+      "position": [
+        -200,
+        -100
+      ],
+      "id": "5d45e3f9-666e-4c29-8cf2-8f4ad2a3a017",
+      "name": "Recibe correo",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "K9sAMQgHyymCsPNy",
+          "name": "Microsoft Outlook account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.subject }}\n{{ $json.sender.emailAddress.address }}\n{{ $json.sender.emailAddress.name }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "Nuevo evento de Calendly",
+              "description": "Es una notificación de Calendly de que se ha creado un nuevo evento"
+            },
+            {
+              "category": "Otro"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.textClassifier",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        -100
+      ],
+      "id": "ce1e66e7-c135-4b85-93a1-ebcd0e322cce",
+      "name": "Califica como Calendly"
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.bodyPreview }}",
+        "attributes": {
+          "attributes": [
+            {
+              "name": "Lead_name",
+              "description": "Extract the name of the invitee",
+              "required": true
+            },
+            {
+              "name": "Email",
+              "description": "Extract the invitee email",
+              "required": true
+            },
+            {
+              "name": "Company_name",
+              "description": "Extract the company name from the email domain without the \".com\"",
+              "required": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1,
+      "position": [
+        360,
+        -120
+      ],
+      "id": "69dccc58-118a-4379-8e79-e6a0e113da5e",
+      "name": "Extrae info"
+    },
+    {
+      "parameters": {
+        "resource": "folder",
+        "name": "={{ $json.output.Lead_name }}",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "root",
+          "cachedResultName": "/ (Root folder)"
+        },
+        "options": {
+          "simplifyOutput": false
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        680,
+        -120
+      ],
+      "id": "05ebf80f-9163-4f4a-92d5-08e267a342eb",
+      "name": "Crea folder",
+      "alwaysOutputData": false,
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "UqYDv23W3Zh2WW5q",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0",
+          "mode": "list",
+          "cachedResultName": "Prueba taxflow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1571368604,
+          "mode": "list",
+          "cachedResultName": "Hoja 3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit#gid=1571368604"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Lead name": "={{ $('Extrae info').item.json.output.Lead_name }}",
+            "Email ": "={{ $('Extrae info').item.json.output.Email }}",
+            "Company name (extracted from the email domain)": "={{ $('Extrae info').item.json.output.Company_name }}",
+            "Status": "Call Scheduled",
+            "Type": "Lead",
+            "Folder": "={{ $json.webViewLink }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Lead name",
+              "displayName": "Lead name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email ",
+              "displayName": "Email ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Company name (extracted from the email domain)",
+              "displayName": "Company name (extracted from the email domain)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Type",
+              "displayName": "Type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Qualification",
+              "displayName": "Qualification",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Engagement type",
+              "displayName": "Engagement type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Folder",
+              "displayName": "Folder",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        860,
+        -120
+      ],
+      "id": "0b217b3a-3dad-473e-8a3e-e49b2be9dac4",
+      "name": "Registra en sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "l3dunLPQ9Nov7RpP",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -480,
+        420
+      ],
+      "id": "b1dcf5cc-cdcc-457b-8ab5-bf1e22e8618b",
+      "name": "Recibe transcripción",
+      "webhookId": "f112e707-2de4-40bb-aaa2-f5cf255c8eed"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=When provided with the full transcript of a discovery call with a potential client, your task is to:\n\n1. Generate a structured summary with these sections:\n   • background: Client’s personal and company background  \n   • needs: Their stated legal needs  \n   • challenges: Key pain points or obstacles {{ $json.chatInput }}",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "2. Answer each of the predefined qualification questions (provided separately) and return an object qualificationAnswers mapping question IDs to answers.\nDoes the client need legal representation or legal drafting services?\n2. Is the legal need within the firm’s practice areas (e.g., corporate law, contracts, employment, IP)?\n3. Is there a clear timeline or urgency to begin the engagement?\n4. Is the client located in a jurisdiction where the firm is licensed to practice?\n5. Has the client worked with a law firm before? Why are they switching?\n6. What is the expected scope (e.g., one-time drafting vs ongoing advisory)?\n7. Does the client have an internal legal team?\n8. What is the size of the company or transaction, if relevant?"
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "3. Make an overall decision field:”Qualified” or “Not Qualified”."
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "4. If decision is “Qualified”, determine the appropriate engagementType (e.g., “Retainer”, “Project”, “Consultation”)."
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "5. Provide a brief justification field explaining your decision."
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "6. Extract the email."
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "7. Extract the personal name of the lead."
+            },
+            {
+              "type": "HumanMessagePromptTemplate",
+              "message": "8. Extract the date of the metting transcribed."
+            }
+          ]
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        -260,
+        420
+      ],
+      "id": "f968f2ca-78ca-4e24-9903-fb12a0ca95e4",
+      "name": "Procesa info"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0",
+          "mode": "list",
+          "cachedResultName": "Prueba taxflow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1571368604,
+          "mode": "list",
+          "cachedResultName": "Hoja 3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit#gid=1571368604"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Email ",
+              "lookupValue": "={{ $json.output.email }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        420,
+        440
+      ],
+      "id": "b5381ae5-c42e-4468-a8ce-5c249bb0a617",
+      "name": "Busca info en sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "l3dunLPQ9Nov7RpP",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "folderId": "={{ $json.Folder.split('/').pop()}}",
+        "title": "Informe"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        620,
+        440
+      ],
+      "id": "65fe0ab1-d22e-4b9e-8815-8367238c7e5e",
+      "name": "Crea informe",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "RkArjbYgKW1QW1pF",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentURL": "={{ $json.id }}",
+        "actionsUi": {
+          "actionFields": [
+            {
+              "action": "insert",
+              "text": "={{`\n**Background**\n${$node[\"Ex_Inf\"].json.output.background}\n\n**Needs**\n${$node[\"Ex_Inf\"].json.output.needs}\n\n**Challenges**\n${$node[\"Ex_Inf\"].json.output.challenges}\n\n**Overall Decision**\n${$node[\"Ex_Inf\"].json.output.overall_Decision}\n\n**Justification**\n${$node[\"Ex_Inf\"].json.output.justification}\n`}}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        820,
+        440
+      ],
+      "id": "7dfd5845-0a57-4d1e-98cd-23de49b57948",
+      "name": "Redacta informe",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "RkArjbYgKW1QW1pF",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "a6742863-ada0-46c4-992b-9398c4d8f9c1",
+              "leftValue": "={{ $('Ex_Inf').item.json.output.overall_Decision }}",
+              "rightValue": "Qualified",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1220,
+        200
+      ],
+      "id": "860b0cf5-0456-476f-919e-f9b46a50aa69",
+      "name": "Si qualified"
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0",
+          "mode": "list",
+          "cachedResultName": "Prueba taxflow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1571368604,
+          "mode": "list",
+          "cachedResultName": "Hoja 3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit#gid=1571368604"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email ": "={{ $('Ex_Inf').item.json.output.email }}",
+            "Status": "Call Had",
+            "Date": "={{ $('Ex_Inf').item.json.output.date }}",
+            "Qualification": "Qualified",
+            "Engagement type": "={{ $('Ex_Inf').item.json.output.engagement_Type }}"
+          },
+          "matchingColumns": [
+            "Email "
+          ],
+          "schema": [
+            {
+              "id": "Lead name",
+              "displayName": "Lead name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email ",
+              "displayName": "Email ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company name (extracted from the email domain)",
+              "displayName": "Company name (extracted from the email domain)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Type",
+              "displayName": "Type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Qualification",
+              "displayName": "Qualification",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Engagement type",
+              "displayName": "Engagement type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Folder",
+              "displayName": "Folder",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        1440,
+        80
+      ],
+      "id": "8f0bc774-23cf-4e35-b83f-e2cee44a17cc",
+      "name": "Actualiza sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "l3dunLPQ9Nov7RpP",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Based on the following context:\n{{ $('Ex_Inf').item.json.output.background }}\n{{ $('Ex_Inf').item.json.output.needs }}\n{{ $('Ex_Inf').item.json.output.challenges }}\nDecision: {{ $('Ex_Inf').item.json.output.overall_Decision }}\nJustification: {{ $('Ex_Inf').item.json.output.justification }}\nEngagement type: {{ $('Ex_Inf').item.json.output.engagement_Type }}\nGenerate a personalized proposal email draft that includes:\n○ Client’s first name and company name\n○ Tailored messaging based on the engagement type and transcript insights\n○ A relevant \"Information Request\" or \"Questionnaire\" (see templates below)\nInformation Request Templates by Engagement Type\nA. Corporate Formation and Structuring\nChecklist:\n● Jurisdiction of incorporation\n● Entity type desired (LLC, C-Corp, etc.)\nFounders’ full legal names, passports, and addresses\n● Ownership breakdown and cap table\n● Business plan or operating model (if available)\n● Prior formation documents (if reincorporating)\nB. Contract Drafting and Review\nChecklist:\n● Draft or prior version of the contract (if reviewing)\n● List of parties involved, including legal names and roles\n● Business context and objectives of the agreement\n● Key terms or clauses the client wants to include\n● Timeline for completion or negotiation\n● Any prior negotiation history or redlines (if applicable)\nC. Employment and HR Legal Advisory\nChecklist:\n● Number of employees and jurisdictions involved\n● Employment agreement templates (if in use)\n● Contractor vs. employee classification concerns\n● Internal HR policies or handbooks\n● Any pending or ongoing disputes\nD. IP Protection and Trademark Filing\nChecklist:\n● Name, logo, or brand to be protected\n● Jurisdictions where protection is required\n● Date of first use or launch\n● Business category or goods/services\n● Prior IP filings (if any)\n● Competitor or conflict concerns"
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        1780,
+        80
+      ],
+      "id": "49f5e876-72c2-41be-9001-302c5d3d7bdd",
+      "name": "Redacta correo"
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.text }}",
+        "attributes": {
+          "attributes": [
+            {
+              "name": "Subject",
+              "description": "Email's subject",
+              "required": true
+            },
+            {
+              "name": "Body",
+              "description": "Email's text body",
+              "required": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1,
+      "position": [
+        2140,
+        80
+      ],
+      "id": "a5b849d6-4a82-4ad4-a778-790355969698",
+      "name": "Extrae info2"
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "subject": "={{ $json.output.Subject }}",
+        "message": "={{ $json.output.Body }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2500,
+        80
+      ],
+      "id": "9b99c04c-c1a1-44f4-9e42-7c2df906f3d4",
+      "name": "Crea draft",
+      "webhookId": "83941608-0a72-4289-86a6-cb9f2cc2a364",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "rJwPhUhgdoX47rW1",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Based on the following context: \n{{ $('Ex_Inf').item.json.output.background }}\n{{ $('Ex_Inf').item.json.output.needs }}\n{{ $('Ex_Inf').item.json.output.challenges }}\nWrite the body (without subject) of a formal, respectful and professional email to notify the decision: not qualified. Explain briefly according to the following justification:\n{{ $('Ex_Inf').item.json.output.justification }}\nmax_lenght 200"
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.6,
+      "position": [
+        1800,
+        300
+      ],
+      "id": "1d477f35-a1d4-4da7-9327-79e527a90ea0",
+      "name": "Redacta correo1"
+    },
+    {
+      "parameters": {
+        "resource": "draft",
+        "subject": "Notification",
+        "message": "={{ $json.text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        2180,
+        280
+      ],
+      "id": "6479c923-160c-4ed6-b012-2e1d29ba28da",
+      "name": "Crea draft1",
+      "webhookId": "e8a97f80-9d58-42dd-bbbb-7934b828be10",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "rJwPhUhgdoX47rW1",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0",
+          "mode": "list",
+          "cachedResultName": "Prueba taxflow",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1571368604,
+          "mode": "list",
+          "cachedResultName": "Hoja 3",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1Fi9iffw4FqTZ22tB0SndICXCi0q_n86CvjYbOmLOjJ0/edit#gid=1571368604"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Email ": "={{ $('Ex_Inf').item.json.output.email }}",
+            "Qualification": "Not Qualified",
+            "Date": "={{ $('Ex_Inf').item.json.output.date }}",
+            "Status": "Call Had"
+          },
+          "matchingColumns": [
+            "Email "
+          ],
+          "schema": [
+            {
+              "id": "Lead name",
+              "displayName": "Lead name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email ",
+              "displayName": "Email ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Company name (extracted from the email domain)",
+              "displayName": "Company name (extracted from the email domain)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date",
+              "displayName": "Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Type",
+              "displayName": "Type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Qualification",
+              "displayName": "Qualification",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Engagement type",
+              "displayName": "Engagement type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Folder",
+              "displayName": "Folder",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        1440,
+        280
+      ],
+      "id": "fdc3eae8-fc81-4ba4-be3a-443687fd472c",
+      "name": "Actualiza sheets1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "l3dunLPQ9Nov7RpP",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "text": "={{ $json.text }}",
+        "attributes": {
+          "attributes": [
+            {
+              "name": "overall_Decision",
+              "description": "overall Decision: ”Qualified” or “Not Qualified”",
+              "required": true
+            },
+            {
+              "name": "engagement_Type",
+              "description": "If decision is “Qualified”, determine the appropriate engagementType (e.g., “Retainer”, “Project”, “Consultation”).",
+              "required": true
+            },
+            {
+              "name": "justification",
+              "description": "a brief justification field explaining your decision",
+              "required": true
+            },
+            {
+              "name": "background",
+              "description": "from the summary",
+              "required": true
+            },
+            {
+              "name": "needs",
+              "description": "from the summary",
+              "required": true
+            },
+            {
+              "name": "challenges",
+              "description": "from the summary",
+              "required": true
+            },
+            {
+              "name": "email",
+              "description": "from the metadata",
+              "required": true
+            },
+            {
+              "name": "lead_name",
+              "description": "Name of the client.",
+              "required": true
+            },
+            {
+              "name": "date",
+              "description": "date of the meeting transcribed",
+              "required": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1,
+      "position": [
+        60,
+        440
+      ],
+      "id": "fe23c6ae-9ef9-4f9d-9b07-740a470c801c",
+      "name": "Ex_Inf"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Calendly Trigger": {
+      "main": [
+        []
+      ]
+    },
+    "Slack": {
+      "main": [
+        []
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Califica como Calendly",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Extrae info",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Procesa info",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Ex_Inf",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Redacta correo1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Redacta correo",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model6": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Extrae info2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recibe correo": {
+      "main": [
+        [
+          {
+            "node": "Califica como Calendly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Califica como Calendly": {
+      "main": [
+        [
+          {
+            "node": "Extrae info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extrae info": {
+      "main": [
+        [
+          {
+            "node": "Crea folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crea folder": {
+      "main": [
+        [
+          {
+            "node": "Registra en sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registra en sheets": {
+      "main": [
+        []
+      ]
+    },
+    "Recibe transcripción": {
+      "main": [
+        [
+          {
+            "node": "Procesa info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Procesa info": {
+      "main": [
+        [
+          {
+            "node": "Ex_Inf",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Busca info en sheets": {
+      "main": [
+        [
+          {
+            "node": "Crea informe",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crea informe": {
+      "main": [
+        [
+          {
+            "node": "Redacta informe",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redacta informe": {
+      "main": [
+        [
+          {
+            "node": "Si qualified",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Si qualified": {
+      "main": [
+        [
+          {
+            "node": "Actualiza sheets",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Actualiza sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Actualiza sheets": {
+      "main": [
+        [
+          {
+            "node": "Redacta correo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redacta correo": {
+      "main": [
+        [
+          {
+            "node": "Extrae info2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extrae info2": {
+      "main": [
+        [
+          {
+            "node": "Crea draft",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redacta correo1": {
+      "main": [
+        [
+          {
+            "node": "Crea draft1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crea draft1": {
+      "main": [
+        []
+      ]
+    },
+    "Actualiza sheets1": {
+      "main": [
+        [
+          {
+            "node": "Redacta correo1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ex_Inf": {
+      "main": [
+        [
+          {
+            "node": "Busca info en sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "6fd00ff3-8a98-43a8-8f06-084c6e1f19aa",
+  "meta": {
+    "instanceId": "326e9b637e6bae0850ba45f71d51701a74bc8737215c0f4878a4e7272be57b30"
+  },
+  "id": "JTqUT48rqT2LkrLr",
+  "tags": []
+}
