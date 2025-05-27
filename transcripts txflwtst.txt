@@ -1,0 +1,69 @@
+1)
+25 de mayo de 2026
+alex.prueba@prueba.com
+Julia: Hi Alex, thank you for booking the call. Why don’t we start with a quick overview of what Finwise Labs does and what led you to reach out? 
+Alex: Sure. We're a fintech startup based in New York. We’re building a B2B payments API for international transactions. We raised our seed round recently, and now we're working with enterprise clients, so we need stronger legal coverage—especially around contracts and structuring. 
+Julia: Congratulations on the funding. So, are you currently incorporated in the U.S.? If so, what’s the structure?
+Alex: Yes, we have a Delaware C-Corp and a holding entity in the Cayman Islands that owns it 100%. We also have a Brazilian subsidiary since we’re expanding there.
+Julia: Understood. Are you already working with legal counsel?
+Alex: We had a solo attorney helping us early on, but now that we're doing larger contracts and have a more complex structure, we need a law firm with experience in venture-backed companies.
+Julia: What kind of support are you looking for? Ongoing general counsel? Contract review? Anything else?
+Alex: Yes, mainly ongoing legal support—reviewing and redrafting MSAs, NDAs, employment agreements. We’re also considering restructuring the board and possibly issuing equity to advisors.
+Julia: Got it. Do you have any upcoming deadlines or urgent matters?
+Alex: We have two contracts under negotiation now—one with a U.S. client and one in Brazil. We’d need support reviewing those next week.
+Julia: Makes sense. Final question—how many people are on your team now, and do you have an internal legal person?
+Alex: We’re 12 full-time employees, and no internal counsel yet. That’s why we’re looking for an outside firm we can rely on.
+Julia: Perfect. Based on what you’ve shared, you’re definitely a good fit for our startup practice. I’ll go ahead and prepare a proposal outlining our scope of work and include a short intake checklist so we can get started.
+Alex: Sounds great. Looking forward to it.
+
+
+2)
+25 de mayo de 2024
+lauren.prueba@prueba.com
+Julia: Hi Lauren, thanks for booking time with me. To get us started, could you tell me a bit about your business and why you reached out?
+Lauren: Sure. I run a wellness coaching business here in Colorado. It’s just me for now—I offer 1:1 coaching and group workshops, both online and in-person. I’ve been running it for about three years and things are going well.
+Julia: Great to hear. What sort of legal support are you currently looking for?
+Lauren: Well, I’m looking to trademark my business name and maybe get help writing terms and conditions for my website and waivers for my coaching clients. I want to make sure I’m protected.
+Julia: Understood. Are you incorporated already?
+Lauren: I’m a sole proprietor right now, but I’ve been thinking about forming an LLC.
+Julia: Okay. Just so I’m transparent up front, our firm primarily works with venture-backed startups and small to mid-sized companies. We don’t typically handle trademarks or consumer-facing terms for solo service providers, though I can recommend a few colleagues who do that work.
+Lauren: Oh, okay. That makes sense. I saw your firm on a startup resource list and thought you might be a fit.
+Julia: No worries at all. Just to confirm—are you planning to raise outside investment or expand to a corporate structure in the near future?
+Lauren: Probably not. I want to stay solo and keep it simple for now.
+Julia: Got it. Then I think a boutique solo practitioner might be the right fit for your needs. I’m happy to introduce you to someone who focuses on this kind of work.
+Lauren: That would be great. Thanks for the honesty.
+Julia: Of course. I’ll send over a few names after this call.
+
+3)
+Date: 2026-06-15
+Claudia: Hi Emilio, thanks for scheduling our discovery call. Could you start by telling me what NovaGuard Technologies does and what prompted you to reach out?
+Emilio: Absolutely. We're a cybersecurity startup based in San Francisco. We recently closed our Series A round, and we're developing a cloud-native security platform that integrates with AWS and Azure. Our enterprise pipeline is growing, and we need robust legal support for partnership agreements, data privacy compliance, and IP protection.
+Claudia: Congratulations on the Series A! Can you share your current corporate structure?
+Emilio: Sure. We’re incorporated as a Delaware C-Corp, with a UK subsidiary for our EMEA operations.
+Claudia: Are you currently working with any legal counsel?
+Emilio: We worked with a solo consultant early on, but now that our contracts are more complex, we need a full-service firm experienced in venture-backed companies.
+Claudia: Understood. What specific services are you looking for—ongoing general counsel, contract drafting, compliance audits?
+Emilio: Yes, we need ongoing general counsel, drafting and reviewing master services agreements, privacy policies, and assistance with SOC 2 compliance.
+Claudia: Do you have any critical deadlines coming up?
+Emilio: We're aiming to finalize a vendor partnership agreement next week, and start our SOC 2 audit in two months.
+Claudia: Great. How large is your team, and do you have in-house legal?
+Emilio: We have 25 employees and no in-house counsel yet.
+Claudia: Based on what you've shared, NovaGuard is a great fit for our venture practice. I'll prepare a proposal outlining our scope and deliver an intake checklist by end of day.
+Emilio: That sounds perfect, Claudia. Thank you.
+emil.prueba@empresa.com
+
+4)
+Claudia: Hi Valeria, thank you for joining today. Could you tell me about your business and what kind of legal help you need?
+Valeria: Sure. I run SweetSpot Bakery, a small artisanal bakery in Boulder, Colorado. It's a sole proprietorship; I handle everything from baking to customer orders. I'm looking to draft an employee handbook, update my lease agreement, and create liability waivers for baking classes I teach.
+Claudia: That sounds interesting. Are you incorporated?
+Valeria: No, it's just me as a sole proprietor right now.
+Claudia: I want to be transparent: our firm specializes in representing venture-backed tech and growth-stage companies. We typically don't handle small business compliance or personal liability waivers.
+Valeria: I see. I came across your firm through a local business directory and thought you might be able to help.
+Claudia: I appreciate that. Are you planning to seek outside investment or expand into a corporate structure soon?
+Valeria: Not at the moment. I'm happy keeping it small and independent.
+Claudia: Understood. I think a boutique firm specializing in small business or a solo practitioner would be the best fit for your needs. I'd be happy to refer you to a trusted local attorney who handles hospitality and food service legal matters.
+Valeria: That would be very helpful. Thank you, Claudia.
+Claudia: Of course. I'll send you their contact information shortly.
+Valeria: Thank you so much.
+Date: 2024-07-10
+val.val@compania.com
