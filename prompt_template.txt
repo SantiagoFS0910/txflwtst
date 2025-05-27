@@ -1,0 +1,79 @@
+### Prompt para procesamiento e transcripción:
+When provided with the full transcript of a discovery call with a potential client, your task is to:
+
+1. Generate a structured summary with these sections:
+   • background: Client’s personal and company background  
+   • needs: Their stated legal needs  
+   • challenges: Key pain points or obstacles 
+
+{{ $json.chatInput }} <--- transcript
+
+2. Answer each of the predefined qualification questions (provided separately) and return an object qualificationAnswers mapping question IDs to answers. |Does the client need legal representation or legal drafting services?2. Is the legal need within the firm’s practice areas (e.g., corporate law, contracts, employment, IP)?3. Is there a clear timeline or urgency to begin the engagement?4. Is the client located in a jurisdiction where the firm is licensed to practice?5. Has the client worked with a law firm before? Why are they switching?6. What is the expected scope (e.g., one-time drafting vs ongoing advisory)?7. Does the client have an internal legal team?8. What is the size of the company or transaction, if relevant?
+
+3. Make an overall decision field:”Qualified” or “Not Qualified”.
+
+4. If decision is “Qualified”, determine the appropriate engagementType (e.g., “Retainer”, “Project”, “Consultation”).
+
+5. Provide a brief justification field explaining your decision.
+
+6. Extract the client's email.
+
+7. Extract the personal name of the lead.
+
+8. Extract the date of the metting transcribed.
+
+### Prompt para redacción de correos:
+
+## IF NOT QUALIFIED:
+Based on the following context: 
+{{ $('Ex_Inf').item.json.output.background }}
+{{ $('Ex_Inf').item.json.output.needs }}
+{{ $('Ex_Inf').item.json.output.challenges }}
+Write the body (without subject) of a formal, respectful and professional email to notify the decision: not qualified. Explain briefly according to the following justification:
+{{ $('Ex_Inf').item.json.output.justification }}
+max_lenght 200
+
+## IF QUALIFIED:
+Based on the following context:
+{{ $('Ex_Inf').item.json.output.background }}
+{{ $('Ex_Inf').item.json.output.needs }}
+{{ $('Ex_Inf').item.json.output.challenges }}
+Decision: {{ $('Ex_Inf').item.json.output.overall_Decision }}
+Justification: {{ $('Ex_Inf').item.json.output.justification }}
+Engagement type: {{ $('Ex_Inf').item.json.output.engagement_Type }}
+Generate a personalized proposal email draft that includes:
+○ Client’s first name and company name
+○ Tailored messaging based on the engagement type and transcript insights
+○ A relevant "Information Request" or "Questionnaire" (see templates below)
+Information Request Templates by Engagement Type
+A. Corporate Formation and Structuring
+Checklist:
+● Jurisdiction of incorporation
+● Entity type desired (LLC, C-Corp, etc.)
+Founders’ full legal names, passports, and addresses
+● Ownership breakdown and cap table
+● Business plan or operating model (if available)
+● Prior formation documents (if reincorporating)
+B. Contract Drafting and Review
+Checklist:
+● Draft or prior version of the contract (if reviewing)
+● List of parties involved, including legal names and roles
+● Business context and objectives of the agreement
+● Key terms or clauses the client wants to include
+● Timeline for completion or negotiation
+● Any prior negotiation history or redlines (if applicable)
+C. Employment and HR Legal Advisory
+Checklist:
+● Number of employees and jurisdictions involved
+● Employment agreement templates (if in use)
+● Contractor vs. employee classification concerns
+● Internal HR policies or handbooks
+● Any pending or ongoing disputes
+D. IP Protection and Trademark Filing
+Checklist:
+● Name, logo, or brand to be protected
+● Jurisdictions where protection is required
+● Date of first use or launch
+● Business category or goods/services
+● Prior IP filings (if any)
+● Competitor or conflict concerns
